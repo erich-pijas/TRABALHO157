@@ -18,11 +18,9 @@ body{
 } 
 
 .hood img {
-
     display: inline-block;
     float: right;
     width: 1300px;
-    
 }
 
 .classificacao{
@@ -40,17 +38,19 @@ body{
 
     text-align: left;
     color: aliceblue;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 .filmes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: auto;
 }
 
 .filmes img{
     max-height: 500px ;
+    border: 10px solid rgb(43, 43, 43);
 }
 
 .pe{
