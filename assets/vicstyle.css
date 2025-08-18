@@ -20,7 +20,8 @@ body{
 .hood img {
     display: inline-block;
     float: right;
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
 }
 
 .classificacao{

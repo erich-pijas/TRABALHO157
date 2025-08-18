@@ -50,3 +50,9 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+.titulo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 300%;
+}
