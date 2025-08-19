@@ -11,6 +11,7 @@
 .logo{
     display: flex;
     justify-content: center;
+
 }
 
 body{
@@ -18,11 +19,21 @@ body{
 } 
 
 .hood img {
+
     display: inline-block;
     float: right;
     width: 100%;
-    max-width: 1300px;
-}
+    max-width: 1200px;
+    backface-visibility: hidden; }
+
+ .filmes img:hover, .hood img:hover { transform: scale(1.05); opacity: 0.95; }
+
+fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+ .body-animate .filmes img, .body-animate .hood img { animation: fadeInUp 0.8s ease forwards; animation-fill-mode: forwards; animation-delay: 0.1s; }
+
+.dupla .texto { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s ease forwards; animation-delay: 0.2s; }
+    
 
 .classificacao{
     font-size: 90%;
@@ -32,14 +43,14 @@ body{
 .titulo{
     font-size: 500%;
     font-family: fantasy;
-    color: rgba(255, 0, 0, 0.692);
+    color: rgb(199, 21, 21);
 }
 
 .texto{
 
     text-align: left;
-    color: aliceblue;
-    font-size: 125%;
+    color: rgb(236, 236, 236);
+    font-size: 150%;
 }
 
 .filmes{
@@ -47,7 +58,16 @@ body{
     flex-direction: row;
     justify-content: space-between;
     overflow-x: auto;
-}
+    backface-visibility: hidden; }
+
+.filmes img:hover, .hood img:hover { transform: scale(1.05); opacity: 0.95; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.body-animate .filmes img, .body-animate .hood img { animation: fadeInUp 0.8s ease forwards; animation-fill-mode: forwards; animation-delay: 0.1s; }
+
+.dupla .texto { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.8s ease forwards; animation-delay: 0.2s; }
+  
 
 .filmes img{
     max-height: 500px ;
